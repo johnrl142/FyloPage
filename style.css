@@ -16,10 +16,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 html {
-    font-size: 80%;
+    font-size: 62,5%;
     font-family: "DM Sans", sans-serif;
     background-color: var(--LightGrayishBlue);
 }
@@ -27,292 +28,341 @@ html {
 /*cabecera*/
 
 header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px 10px 10px 10px;
+}
+
+nav {
     min-width: 320px;
-    height: 60px;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
 }
 
-header .logo_container {
-    width: 250px;
-    height: auto;
+nav .logo_container {
+    margin-left: 100px;
+}
+
+nav .logo_container img {
+    width:220px;
+    margin-top: 5px;
+}
+
+nav .header_menu {
     display: flex;
-    list-style: none;
-    justify-content: flex-start;
     align-items: center;
-    padding-right: 60%;
-}
-
-header nav {
-    display: flex;
     justify-content: flex-end;
-    list-style: none;
+    margin-right: 100px;
+    min-width: 100px;
 }
 
-header .header_menu {
-    width: 250px;
-    height: auto;
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    align-items: center;
+nav .header_menu a {
+    color:black;
+    border-bottom: 1 solid black;
+    padding: 10px;
+    text-decoration: none;
 }
 
 /*cuerpo de pagina*/
 
-.container {
+main {
     width: 100%;
     height: auto;
-    padding-top: 80px;
+}
+
+/*primer contenedor */
+.white-background {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
     padding-bottom: 30px;
     text-align: center;
 }
 
-.image {
-    width: 400px;
-}
-
-.h2-one{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
-    text-align: left;
-    padding-bottom: 20px;
-    color: var(--VeryDarkBlue);
-}
-
-.p-one {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    text-align: left;
-    color: var(--VeryDarkBlue);
-    padding-bottom: 20px;
-}
-
-.input {
+.container-one {
     display: flex;
-    border: 1px solid var(--LightGray);
-    border-radius: 2px;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    text-align: start;
     padding: 15px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    align-items: flex-start ;
-    height: 50px;
-    width: 400px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.3rem;
 }
 
-.button {
-    background-color:var(--BrightBlue);
-    color: var(--LightGrayishBlue);
-    width: 200px;
-    height: 50px;
-    border-radius: 3px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
+/*segundo contenedor */
 
-.button:hover {
-    background-color: #7098ff;
-}
-
-
-.container .card {
-    display: flex;
-    align-items: center;
-    justify-content: initial;
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 50px;
-}
-
-.container .card div {
-    display: flex;
-}
-
-.container .card2 {
-    display: flex;
-    align-items: center;
-    justify-content: initial;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 50px;
+.white-background2 {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
     background-image: url("./images/bg-curve-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.article-two h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    text-align: left;
-    color: var(--ModerateCyan);
-    padding-bottom: 20px;
-    padding-right: 7px;
-    padding-top: 3px;
-}
-
-.article-two {
+.container-two {
     display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    text-align: start;
+    padding: 15px;
+}
+
+/*tercer contenedor */
+
+.purpleslow-background {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--DesaturatedBlue);
+}
+
+.container-three {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 280px;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    text-align: start;
+    padding: 15px;
+}
+
+.container-three .container-three_right {
+    display: flex;
+    justify-content: initial;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items:initial;
+    margin-left: 100px;
+    height: auto;
 }
 
-.article-two .sub{
+/* articulos */
+
+.container-article {
+    width: 50%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    text-align: start;
+}
+
+.container-article .container-article_subtitle {
     display: flex;
+    align-items: center;
 }
 
-.article-two .sub .icon {
+
+
+
+/* titulos, parrafos, input, botones, imagenes*/
+
+.container-article .container-article_title {
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    font-weight: bold; /*peso a la fuente*/
+    line-height: 2.6rem; /*altura*/
+    color: var(--VeryDarkBlue)
+}
+
+.container-article  .container-article_paragraph {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--VeryDarkBlue);
+}
+
+.container-article .container-article_title-white {
+    margin-bottom: 30px;
+    font-size: 2.8rem;
+    font-weight: bold; /*peso a la fuente*/
+    line-height: 2.6rem; /*altura*/
+    color: var(--LightGrayishBlue);
+}
+
+.container-article  .container-article_paragraph-white {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--LightGrayishBlue);
+}
+
+.container-article .container-article_subtitle h3{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: var(--ModerateCyan);
+    border-bottom: 1px solid var(--ModerateCyan);
+}
+
+.container-article .container-article_subtitle .icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-image: url("./images/icon-arrow.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 
-.card_small {
-    width: 100%;
+.input {
+    border: 1px solid var(--LightGray);
+    min-width: 150px;
+    width: 300px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.input2 {
+    border: 1px solid var(--LightGray);
+    min-width: 150px;
+    width: 350px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: var(--BrightBlue);
+    color: var(--LightGrayishBlue);
+    border-radius: 5px;
+    min-width: auto;
+    max-width: auto;
+    padding: 5px;
+    height: 40px;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+
+.image {
+    width: 500px;
+    height: auto;
+    align-self: center;
+}
+
+/*card*/
+
+.container-article .container-article_card {
+    width: 200px;
     min-width: 288px;
-    max-width: 300px;
+    max-width: 400px;
     min-height: 150px;
+    margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0,0, 0.16);
 }
 
-.article-two .card_small .comillas {
+.container-article .container-article_card .card-resume {
+    display: flex;
+    width: 230px;
+}
+
+.container-article .container-article_card .comillas {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-image: url("./images/icon-quotes.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.article-two .card_small .testimonio {
-    display: flex;
+.container-article .container-article_card p {
+    margin-bottom: 20px;
 }
 
-.article-two .card_small .testimonio div {
-   padding-left: 20px;
-}
-
-.article-two .card_small .img-perfil {
+.container-article .container-article_card .card-resume img {
     width: 50px;
+    height: 50px;
     border-radius: 100px;
-}
-
-.article-two .card_small .testimonio h6{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 0,5rem;
-}
-
-.article-two .card_small .testimonio p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: left;
-    font-size: 0,2rem;
-}
-
-/*segunda section*/
-
-.container-two {
-    display: flex;
-    width: 100%;
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 30px;
-    text-align: center;
-    background-color: var(--DesaturatedBlue);
-}
-
-.container-two .card3 {
-    display: flex;
-    align-items: center;
-    justify-content: initial;
-    width: 80%;
     margin: 0 auto;
-    text-align: left;
-    padding-bottom: 50px;
-    color: var(--LightGrayishBlue);
+    align-items: center;
+    
 }
 
-.container-two .card3 h2 {
-    padding-bottom: 10px;
-    font-size: 3rem;
+.container-article .container-article_card .card-resume div h6 {
+    font-size: 1rem; 
 }
 
-.container-two .card3 p {
-    padding-bottom: 10px;
-    font-size: 1.5rem;
+.container-article .container-article_card .card-resume div p {
+    font-size: 0,6rem; 
 }
 
-.container-two .card3 .ct-iz {
-    padding-right: 20px;
-}
+/*footer*/
 
-/*tercera section*/
-
-.container-three {
+.purplehard-background {
     display: flex;
+    justify-content: space-evenly;
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 20px;
     padding-bottom: 30px;
     text-align: center;
     background-color: var(--VeryDarkBlue);
+    color: var(--LightGrayishBlue);
 }
 
-.container-three .card4 {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    width: 80%;
-    color: antiquewhite;
+.purplehard-background .one  {
+    text-align: start;
 }
 
-.container-three .card4 .one {
+.purplehard-background .one .logo2 {
+    width: 100px;
+}
+
+.purplehard-background .two {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
 }
 
-.container-three .card4 .one .logo2 {
-    display: inline-block;
-    width: 120px;
-    margin-bottom: 10px;
-}
-
-.container-three .card4 ul {
-    padding: 5px;
-}
-
-.container-three .card4 ol {
-    padding: 5px;
-    align-items: initial;
-}
-
-.container-three .card4 ul a {
+.purplehard-background .two a {
     text-decoration: none;
-    color: var(--just-white);
+    list-style: none;
+    color: var(--LightGrayishBlue);
 }
 
-.container-three .card4 .four .facebook {
+.purplehard-background .three {
+    display: flex;
+    flex-direction: column;
+}
+
+.purplehard-background .three a {
+    text-decoration: none;
+    list-style: none;
+    color: var(--LightGrayishBlue);
+}
+
+.purplehard-background .four {
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.purplehard-background .four .facebook{
     display: inline-block;
-    width:  20px;
+    width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-image: url("./images/001-facebook.png");
     background-size: cover;
     background-position: center;
@@ -320,23 +370,23 @@ header .header_menu {
     margin: 5px;
 }
 
-.container-three .card4 .four .twitter {
+.purplehard-background .four .twitter{
     display: inline-block;
-    width:  20px;
+    width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-image: url("./images/002-twitter.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin:5px;
+    margin: 5px;
 }
 
-.container-three .card4 .four .instagram {
+.purplehard-background .four .instagram{
     display: inline-block;
-    width:  20px;
+    width: 20px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background-image: url("./images/011-instagram.png");
     background-size: cover;
     background-position: center;
@@ -344,9 +394,7 @@ header .header_menu {
     margin: 5px;
 }
 
-/*footer*/
-
-footer {
+.attribution {
     background-color: var(--VeryDarkBlue);
     color: var(--LightGrayishBlue);
 }
