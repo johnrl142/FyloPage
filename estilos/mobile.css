@@ -125,11 +125,14 @@ button {
 }
 
 .container-article .container-article_title-white {
+    display: flex;
     margin-bottom: 30px;
     font-size: 2.4rem;
     font-weight: bold; /*peso a la fuente*/
     line-height: 2.5rem; /*altura*/
     color: var(--LightGrayishBlue);
+    align-content: center;
+    justify-content: center;
 }
 
 .container-article  .container-article_paragraph-white {
@@ -149,4 +152,7 @@ button {
 .container-three_right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
